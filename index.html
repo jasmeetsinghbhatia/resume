@@ -25,20 +25,32 @@
             height: 60px;
             color: #333;
             text-decoration: none;
-            transition: all 0.3s ease;
+            transition: all 0.3 ease;
             font-size: 50%;
+        }
+        .progress { 
+            transition: width 2s ease;
         }
     </style>
 </head>
 <body>
         <nav style='padding: 20px; border-bottom: 5px solid #ccc; margin-bottom: 30px;'>
         <div class="container">
-                <h2 style='margin-bottom: 0;'>
-                          Jasmeet Singh</h2>
-                <p style='margin-bottom: 0; text-align: right;'>
-                    <i class="nes-icon gmail"></i>
-                    jasmeetsinghbhatia@gmail.com
-                </p>
+            <div class="row">
+                <div class="col-md-7 col-xs-12">
+                        <h2 style='margin-bottom: 0;'>
+                            Jasmeet Singh
+                        </h2>
+                </div>
+                <div class="col-md-5 col-xs-12">
+                        <p style='margin-bottom: 0; text-align: left;'>
+                            <a href="mailto:jasmeetsinghbhatia@gmail.com" target="_blank" >
+                                <i class="nes-icon gmail"></i>
+                                jasmeetsinghbhatia@gmail.com 
+                            </a>
+                        </p>
+                </div>
+            </div>
         </div>
         <a href="https://github.com/jasmeetsinghbhatia/resume" target="_blank" rel="noopener" class="github-link active">
             <p class="nes-balloon is-success from-right" style="font-size: 90%; margin-bottom: 0px;">Fork this<br>on GitHub</p> 
@@ -79,7 +91,7 @@
                     <div class="nes-container with-title" style="margin-bottom: 10px;">
                         <h3 class="title">Education</h3>
                         <div>
-                                <a href="https://www.bits-pilani.ac.in/" class="nes-badge is-icon">
+                                <a href="https://www.bits-pilani.ac.in/" target="_blank" class="nes-badge is-icon">
                                         <span class="is-success">9.2</span>
                                         <span>Master of Science (2014) <br>
                                             - BITS, Pilani-India</span>
@@ -88,7 +100,7 @@
                         </div>
                         <br>
                         <div>
-                                <a href="http://www.jiit.ac.in/" class="nes-badge is-icon">
+                                <a href="http://www.jiit.ac.in/" target="_blank" class="nes-badge is-icon">
                                         <span class="is-success">7.8</span>
                                         <span>Bachelor of Technology (2009) <br>
                                             - JIITU, Noida-India</span>
@@ -99,9 +111,9 @@
                     <div class="nes-container with-title" style="margin-bottom: 10px">
                         <h3 class="title">Connect with me</h3>
                             <div>
-                                <a href="https://www.linkedin.com/in/jasmeetsinghbhatia/"><i class="nes-icon linkedin"></i></a>
-                                <a href="https://github.com/jasmeetsinghbhatia"><i class="nes-icon github"></i></a>
-                                <a href="mailto:jasmeetsinghbhatia@gmail.com"><i class="nes-icon gmail"></i></a>
+                                <a href="https://www.linkedin.com/in/jasmeetsinghbhatia/" target="_blank"><i class="nes-icon linkedin"></i></a>
+                                <a href="https://github.com/jasmeetsinghbhatia" target="_blank"><i class="nes-icon github"></i></a>
+                                <a href="mailto:jasmeetsinghbhatia@gmail.com" target="_blank"><i class="nes-icon gmail"></i></a>
                             </div>
                     </div>
                     <div class="nes-container with-title">
@@ -109,7 +121,7 @@
                         <div class="row">
                             <div class="col-xs-12" style="margin-bottom: 20px">
                                 <div>
-                                    <a href="https://github.com/jasmeetsinghbhatia/rps-in-a-weekend">
+                                    <a href="https://github.com/jasmeetsinghbhatia/rps-in-a-weekend" target="_blank">
                                         <div class="nes-icon github"></div>
                                         Rock Paper Scissors
                                     </a>
@@ -123,7 +135,7 @@
                             </div>
                             <div class="col-xs-12" style="margin-bottom: 20px">
                                     <div>
-                                        <a href="https://github.com/jasmeetsinghbhatia/gdaxbot">
+                                        <a href="https://github.com/jasmeetsinghbhatia/gdaxbot" target="_blank">
                                             <div class="nes-icon github"></div>
                                             Gdaxbot for slack
                                         </a>
@@ -137,7 +149,7 @@
                                 </div>
                                 <div class="col-xs-12" style="margin-bottom: 10px">
                                     <div>
-                                        <a href="https://github.com/jasmeetsinghbhatia/RestAPI-with-flask">
+                                        <a href="https://github.com/jasmeetsinghbhatia/RestAPI-with-flask" target="_blank">
                                             <div class="nes-icon github"></div>
                                             Rest API with Flask
                                         </a>
@@ -154,30 +166,30 @@
                     </div>
                 </div>
                 <div class="col-md-7 col-sm-12 col-xs-12">
-                    <div class="nes-container with-title" style="margin-bottom: 20px;">
+                    <div class="nes-container with-title" style="margin-bottom: 20px; margin-top: 2px;">
                         <h3 class="title">Core Skills</h3>
                         <div class="row">
                             <div class="col-sm-4 col-xs-12">Java</div>
                             <div class="col-sm-8 col-xs-12">
-                                <progress class="nes-progress is-success" value="8" max="10"></progress>
+                                <progress class="nes-progress progress is-success" value="8" max="100"></progress>
                             </div>
                         </div>
                         <div class="row">
                                 <div class="col-sm-4 col-xs-12">Python</div>
                                 <div class="col-sm-8 col-xs-12">
-                                    <progress class="nes-progress is-success" value="7.5" max="10"></progress>
+                                    <progress class="nes-progress progress is-success" value="7.5" max="100"></progress>
                                 </div>
                             </div>
                             <div class="row">
                                     <div class="col-sm-4 col-xs-12">Selenium</div>
-                                    <div class="col-sm-8 col-xs-12">
-                                        <progress class="nes-progress is-success" value="8.5" max="10"></progress>
+                                    <div class="col-sm-8 col-xs-12" style="transition: width 1s ease-in;">
+                                        <progress class="nes-progress progress is-success" value="8.5" max="100"></progress>
                                     </div>
                                 </div>
                                 <div class="row">
                                         <div class="col-sm-4 col-xs-12">Jenkins</div>
-                                        <div class="col-sm-8 col-xs-12">
-                                            <progress class="nes-progress is-success" value="7" max="10"></progress>
+                                        <div class="col-sm-8 col-xs-12" style="transition: width 1s ease-in;">
+                                            <progress class="nes-progress progress is-success" value="7" max="100"></progress>
                                         </div>
                                     </div>
                     </div>
@@ -186,19 +198,19 @@
                         <div class="row">
                             <div class="col-sm-4 col-xs-12">Junit</div>
                             <div class="col-sm-8 col-xs-12">
-                                    <progress class="nes-progress is-success" value="9" max="10"></progress>
+                                    <progress class="nes-progress progress is-success" value="9" max="100"></progress>
                                 </div>
                         </div>
                         <div class="row">
                                 <div class="col-sm-4 col-xs-12">Docker</div>
                                 <div class="col-sm-8 col-xs-12">
-                                        <progress class="nes-progress is-warning" value="6" max="10"></progress>
+                                        <progress class="nes-progress progress is-warning" value="6" max="100"></progress>
                                     </div>
                             </div>
                             <div class="row">
                                     <div class="col-sm-4 col-xs-12">Git</div>
                                     <div class="col-sm-8 col-xs-12">
-                                            <progress class="nes-progress is-success" value="8.5" max="10"></progress>
+                                            <progress class="nes-progress progress is-success" value="8.5" max="100"></progress>
                                         </div>
                                 </div>
                     </div>
@@ -263,5 +275,7 @@
                 </div>
             </div>
         </div>
+
+        <script src="main.js"></script>
 </body>
 </html>

@@ -1,14 +1,32 @@
-const progress_bars = document.querySelectorAll('.progress');
+const progressBars = document.querySelectorAll('.progress');
 
-progress_bars.forEach( bar => {
-    var bar_progress = bar.value;
-    const original_bar_value = bar.value;
-    const final_bar_progress = bar.value * 10; 
-   
-    while (bar_progress < final_bar_progress) {
-        setTimeout(() => {    
-            bar.value = bar_progress;
-            }, 1000);
-            bar_progress += original_bar_value;
+progressBars.forEach(bar => {
+  const start = Number(bar.value) || 0;
+  const target = start * 10; // preserve your original target logic
+
+  // If you want the animation duration to depend on how far it must go:
+  const distance = Math.abs(target - start);
+  const duration = Math.max(800, 8 * distance + 600); // ms, tweak to taste
+
+  const startTime = performance.now();
+
+  function easeOutCubic(t) {
+    return 1 - Math.pow(1 - t, 3);
+  }
+
+  function animate(now) {
+    const elapsed = now - startTime;
+    const progress = Math.min(elapsed / duration, 1);
+    const eased = easeOutCubic(progress);
+    bar.value = start + (target - start) * eased;
+
+    if (progress < 1) {
+      requestAnimationFrame(animate);
+    } else {
+      // Ensure final is exact
+      bar.value = target;
     }
+  }
+
+  requestAnimationFrame(animate);
 });

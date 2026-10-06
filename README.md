@@ -2,6 +2,8 @@
 
 A responsive web resume paired with an integrated visitor analytics dashboard to track traffic and engagement.
 
+🔗 **Live URL:** [https://jasmeetsingh.is-a.dev](https://jasmeetsingh.is-a.dev)
+
 ---
 
 ## 1. Resume Preview

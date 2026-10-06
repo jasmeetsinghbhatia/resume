@@ -18,4 +18,4 @@ Here is a preview of the resume interface:
 
 Here is a preview of the analytics dashboard used to track page views, visitor metrics, and referral sources:
 
-![Analytics Dashboard Preview](https://github.com/user-attachments/assets/a432d96c-7f04-486a-914c-27d3b6b97c48)
+![Analytics Dashboard Preview](https://github.com/user-attachments/assets/36f345fb-cd9d-4467-a4e1-866f1588cf25)
